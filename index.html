@@ -4,46 +4,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noviello - Impresa Boschiva</title>
+  <meta name="description"
+    content="Impresa Boschiva Noviello - Vendita legna da ardere, pellet certificato e carbone di qualità in tutta la provincia di Salerno. Servizio di consegna a domicilio.">
+  <title>Impresa Boschiva Noviello - Legna, Pellet e Carbone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --verde-bosco: #122810;
       --marrone-terra: #3A2415;
       --panna: #f1f1ed;
+      --verde-chiaro: #2D9C4F;
+      --bianco: #ffffff;
+      --grigio-scuro: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: var(--panna);
       color: var(--marrone-terra);
+      line-height: 1.6;
     }
 
     header {
       background-color: var(--verde-bosco);
-      padding: 1rem;
+      padding: 1.5rem;
       text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     header img {
-      max-width: 300px;
+      max-width: 250px;
+      height: auto;
     }
 
     .hero {
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
+      background-color: var(--verde-chiaro);
+      color: var(--bianco);
     }
 
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: var(--bianco);
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebd5c;
     }
 
     .descrizione,
     .servizi,
     .contatti {
-      padding: 2rem;
-      max-width: 800px;
+      padding: 3rem 2rem;
+      max-width: 1200px;
       margin: auto;
     }
 
@@ -53,80 +91,142 @@
     }
 
     .servizi li {
-      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      margin: 0.75rem 0;
     }
 
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      margin-top: 1rem;
-      border-radius: 50px;
+    .servizi li::before {
+      content: "✔️";
+      margin-right: 0.5rem;
+      color: var(--verde-chiaro);
+    }
+
+    .contatti h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--verde-bosco);
+    }
+
+    .contatti p {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+    }
+
+    .contatti .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .contatti .contact-item i {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--verde-chiaro);
+    }
+
+    .contatti .contact-item a {
+      color: var(--grigio-scuro);
       text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
+      font-size: 1.1rem;
     }
 
-    .whatsapp-button:hover {
-      background-color: #1ebd5c;
+    .contatti .contact-item a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      background-color: var(--marrone-terra);
-      color: white;
+      background-color: var(--verde-bosco);
+      color: var(--bianco);
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
+      font-size: 0.9rem;
     }
 
-    @media (max-width: 600px) {
+    footer a {
+      color: var(--bianco);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
       .hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .whatsapp-button {
+        padding: 0.75rem 1.5rem;
+      }
+
+      .servizi ul {
+        font-size: 1rem;
       }
     }
   </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <img src=".\img\logo.jpg" alt="Logo Noviello">
+    <img src=".\img\8.png" alt="Logo Noviello">
   </header>
 
   <section class="hero">
     <h1>Impresa Boschiva Noviello</h1>
-    <p>Legna da ardere, pellet certificato e carbone di qualità</p>
+    <p>Legna da ardere, pellet certificato e carbone di qualità in tutta la provincia di Salerno</p>
     <a class="whatsapp-button" href="https://wa.me/3351311448" target="_blank">Contattaci su WhatsApp</a>
   </section>
 
   <section class="descrizione">
     <p>L’Impresa Boschiva Noviello, con sede a Cava de’ Tirreni, è un punto di riferimento nella vendita di legna da
       ardere, pellet certificato e carbone di qualità in tutta la provincia di Salerno. Offriamo legna secca e
-      stagionata per pizzerie, ristoranti, caminetti, stufe e barbecue, disponibile in varie pezzature. Serviamo sia
-      clienti privati che attività commerciali, con vendita all’ingrosso e al dettaglio. Tutti i nostri prodotti sono
-      attentamente selezionati per garantire efficienza, durata e sicurezza. Effettuiamo consegne rapide e puntuali a
-      domicilio in tutta l’area, con un servizio affidabile e professionale.</p>
+      stagionata per pizzerie, ristoranti, caminetti, stufe e barbecue, disponibile in varie pezzature. Serviamo
+      sia clienti privati che attività commerciali, con vendita all’ingrosso e al dettaglio. Tutti i nostri
+      prodotti sono attentamente selezionati per garantire efficienza, durata e sicurezza. Effettuiamo consegne
+      rapide e puntuali a domicilio in tutta l’area, con un servizio affidabile e professionale.</p>
   </section>
 
   <section class="servizi">
-    <h2>Servizi</h2>
+    <h2>Servizi Offerti</h2>
     <ul>
       <li>Vendita legna da ardere (varie pezzature)</li>
       <li>Pallet di pellet certificato</li>
       <li>Carbone per barbecue e camini</li>
       <li>Forniture per ristoranti e pizzerie</li>
-      <li>Consegna a domicilio</li>
+      <li>Consegna a domicilio in tutta la provincia di Salerno</li>
     </ul>
   </section>
 
   <section class="contatti">
-    <h2>Contatti</h2>
-    <p>📍 Cava de’ Tirreni (SA)</p>
-    <p>📞 Telefono: 335 1311448</p>
-    <p>📧 Email: info@impresanoviello.it</p>
+    <h2>Contattaci</h2>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Via Francesco Sorrentino, snc, Cava de’ Tirreni (SA)</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone-alt"></i>
+      <a href="tel:+393351311448">Telefono: 335 1311448</a>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:newnoviellolegnami@gmail.com">Email: newnoviellolegnami@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-whatsapp"></i>
+      <a href="https://wa.me/3351311448" target="_blank">Contattaci su WhatsApp</a>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Impresa Boschiva Noviello. Tutti i diritti riservati.</p>
+    <p>Design by <a href="https://www.linkedin.com/in/vincenzo-noviello1515/" target="_blank">Vincenzo Noviello</a>
+    </p>
   </footer>
 </body>
 
