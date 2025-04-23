@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noviello - Impresa Boschiva</title>
+  <style>
+    :root {
+      --verde-bosco: #122810;
+      --marrone-terra: #3A2415;
+      --panna: #f1f1ed;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--panna);
+      color: var(--marrone-terra);
+    }
+
+    header {
+      background-color: var(--verde-bosco);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 300px;
+    }
+
+    .hero {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .descrizione,
+    .servizi,
+    .contatti {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .servizi ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .servizi li {
+      margin: 0.5rem 0;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebd5c;
+    }
+
+    footer {
+      background-color: var(--marrone-terra);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo Noviello">
+  </header>
+
+  <section class="hero">
+    <h1>Impresa Boschiva Noviello</h1>
+    <p>Legna da ardere, pellet certificato e carbone di qualità</p>
+    <a class="whatsapp-button" href="https://wa.me/3351311448" target="_blank">Contattaci su WhatsApp</a>
+  </section>
+
+  <section class="descrizione">
+    <p>L’Impresa Boschiva Noviello, con sede a Cava de’ Tirreni, è un punto di riferimento nella vendita di legna da
+      ardere, pellet certificato e carbone di qualità in tutta la provincia di Salerno. Offriamo legna secca e
+      stagionata per pizzerie, ristoranti, caminetti, stufe e barbecue, disponibile in varie pezzature. Serviamo sia
+      clienti privati che attività commerciali, con vendita all’ingrosso e al dettaglio. Tutti i nostri prodotti sono
+      attentamente selezionati per garantire efficienza, durata e sicurezza. Effettuiamo consegne rapide e puntuali a
+      domicilio in tutta l’area, con un servizio affidabile e professionale.</p>
+  </section>
+
+  <section class="servizi">
+    <h2>Servizi</h2>
+    <ul>
+      <li>Vendita legna da ardere (varie pezzature)</li>
+      <li>Pallet di pellet certificato</li>
+      <li>Carbone per barbecue e camini</li>
+      <li>Forniture per ristoranti e pizzerie</li>
+      <li>Consegna a domicilio</li>
+    </ul>
+  </section>
+
+  <section class="contatti">
+    <h2>Contatti</h2>
+    <p>📍 Cava de’ Tirreni (SA)</p>
+    <p>📞 Telefono: 335 1311448</p>
+    <p>📧 Email: info@impresanoviello.it</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Impresa Boschiva Noviello. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+
+</html>
